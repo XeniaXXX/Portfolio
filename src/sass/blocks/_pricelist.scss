@@ -1,0 +1,27 @@
+.pricelist {
+  margin-top: 60px;
+  &__wrapper {
+    margin-top: 60px;
+    padding: 0 50px;
+    display: grid;
+    grid-template: repeat(3, minmax(44px, auto)) / repeat(2, 1fr);
+    grid-column-gap: 327px;
+    grid-row-gap: 15px;
+  }
+  &__block {
+    display: grid;
+    grid-template-columns: 200px 121px;
+    //grid-template-columns: repeat(2, auto);
+    grid-template-rows: minmax(18px, auto);
+    //grid-template-rows: repeat(2, 18px);
+    justify-content: space-between;
+    align-content: space-between;
+  }
+  &-descr {
+    width: 340px;
+  }
+  &-name {
+    position: relative;
+    @include before_circle_small;
+  }
+}
